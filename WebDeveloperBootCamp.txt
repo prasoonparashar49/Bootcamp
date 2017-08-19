@@ -1,0 +1,1 @@
+html is noun, css is adjective and javascript is verb.

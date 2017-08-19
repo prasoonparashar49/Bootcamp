@@ -1,0 +1,53 @@
+/*star this selector is something you wont be using very often. It is used when you want to apply a rule on every element*/
+/* 
+* {
+	border: 1px solid lightgrey;
+}*
+/*Descendant: I want to select all anchor tags that are descendants of li, I want to select all descendants of ul that are of class veggie*/
+body{
+	background:url("http://i.stack.imgur.com/vhoa0.jpg");
+	background-repeat:none;
+	background-size:cover;
+}
+
+li a {
+	color: Maroon;
+}
+
+ul .veggie{
+	color: Green;
+}
+
+ul .fruits {
+	color: rgb(255,200,10);
+}
+
+/*Adjacent: Unlike Descendant where we selected nested elements, it allows us to select a sibling, all ul adjacent to h3*/
+h3 + ul {
+	border: 1px solid rgb(180,119,101);
+}
+/*Attribute: color all the anchor tag linking to google in the page  'https://css-tricks.com/almanac/selectors/a/attribute/'*/
+a[href*='www.google.com']
+{
+	color:rgb(197,210,100);
+}
+a:not([href*='www.google.com']){
+	color:blue;
+}
+/*nth of type: From every group of ul it is going to select odd ones or odd ones in a given group  */
+ul:nth-of-type(odd){
+	background: rgba(119,136,153,0.2);
+}
+
+a:hover{
+	color:Red;
+}
+
+/*color all h3 header anchor tags i.e. all a descendants of h3 should be of specific color*/
+h3>a{
+	color:rgb(200,197,110);
+}
+
+li[data-company-type='non-google'] > a{
+	color:rgb(199,220,190);
+}
