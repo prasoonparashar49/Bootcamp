@@ -3,9 +3,29 @@
 	<title>Bootstrap Demo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<style>
+		.span2{
+			background-color:orange;
+		}
+		.span8{
+			background-color:slategray;
+		}
+	</style>
 </head>
 <body>
-	<h1>Hello World</h1>
+	<div class='container'>
+		<div class="row">
+			<div class="span2">
+				Left Side Bar
+			</div>
+			<div class="span8 text-center" >	
+				Main Content area
+			</div>
+			<div class="span2">
+				Right side Bar
+			</div>
+		</div>
+	</div>
 	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.js" type="text/javascript"></script>
 </body>
